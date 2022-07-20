@@ -1,0 +1,27 @@
+[*/] on start ->
+  send 'Отправь мне фотографию'
+
+[/a1] on photo ->
+  save $photo
+  send 'В какой канал отправить?', kb[channels]
+
+[a1/a2] on kb[channels][diunder] ->
+  sendPost to '@diunder'
+
+[a1/] on kb[channels][pikzery] ->
+  sendPost to '@pikzery', caption '[@милые пикчи](@pikzery)'
+
+[a1/a2] on kb[channels][akiet] ->
+  send 'Выбери подпись:', kb[signs]
+
+[a2/] on kb[signs][anime_pictures] ->
+  sendPost to '@akiet', caption '[@аниме пикчи](@akiet)'
+
+[a2/] on kb[signs][paired_avatars] ->
+  sendPost to '@akiet', caption '[@парные авы](@akiet)'
+
+[a1/] on kb[channels][avy_parnye_avatarki] ->
+  sendPost to '@avy_parnye_avatarki'
+
+[*] on text ->
+  send '?'

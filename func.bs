@@ -1,0 +1,3 @@
+new sendPost to, caption? ->
+  send &photo, **
+  send 'ok', kb[remove]

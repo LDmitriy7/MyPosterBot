@@ -1,0 +1,6 @@
+channels ->
+  diunder: '@diunder'
+  pikzery: '@pikzery'
+  akiet: '@akiet'
+  avy_parnye_avatarki: '@avy_parnye_avatarki'
+
